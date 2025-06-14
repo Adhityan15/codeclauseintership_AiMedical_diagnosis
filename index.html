@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Medical Diagnosis</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f8ff; text-align: center; padding: 50px; }
+        h1 { color: #333; }
+        .upload-box { margin: 20px auto; padding: 20px; border: 2px dashed #0088cc; background: #ffffff; width: 400px; }
+        input[type=file] { margin: 15px; }
+        input[type=submit] {
+            background: #0088cc; color: white; border: none; padding: 10px 25px;
+            font-size: 16px; cursor: pointer; border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 AI Medical Diagnosis</h1>
+    <div class="upload-box">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required><br>
+            <input type="submit" value="Diagnose">
+        </form>
+    </div>
+</body>
+</html>
